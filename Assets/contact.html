@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accueil</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+
+
+<body>
+
+    <header>
+        <img class="jardlogo" src="Assets/image/jarditou_html_zip/images/jarditou_logo.jpg" alt="jarditou">
+        <p>La qualité depuis 70 ans</p>
+    </header>
+
+<nav>
+   <ul>
+    <li><a href="index.html" title="accueil">Accueil</a></li>
+    <li><a href="tableau.html" title="tableau">Tableau</a></li>
+    <li><a href="contact.html" title="contact">Contact</a></li>
+   </ul> 
+    <img src="Assets/image/jarditou_html_zip/images/promotion.jpg" alt="promotion">
+</nav>
+
+<div>
+    <main>
+    
+    <h1>Contact</h1> 
+    
+    <hr>
+    <form>
+        <p>*Ces zones sont obligatoires</p>
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+            <label for="nom">Votre Nom*:</label><input type="text" name="nom" id="?"><br>
+            <label for="prenom">Votre Prenom*:</label><input type="text" name="prenom" id="?"><br>
+            <label for="Sexe">Sexe*:</label><input type="radio" name="Sexe" value="feminin">feminin
+            <input type="radio" name="Sexe" value="masculin">Masculin <br>
+             <label for="Codepostal">Code postal</label><input type="text" name="Codepostal" id="?"><br>
+             <label for="ville">Ville:</label><input type="text" name="ville" id="?"><br>
+            <label for="date">Date de naissance:</label><input type="date" name="ddn" id="date"><br>
+            <label for="?">Email*:</label><input type="email"><br>
+            </fieldset>
+            <fieldset>
+                    <legend>Votre demande</legend>
+                <label for="sujet">Sujet*</label>
+                <select id="sujet" size="1"required title="veuillez selectionner un sujet.">
+                
+                <option value="veuillez Séléctionner un sujet">veuillez Séléctionner un sujet</option>
+                <option value="Mes commandes">Mes commandes</option> 
+                <option value="Question sur un produit">Question sur un produit</option>
+                <option value="Réclamations">Réclamation</option>
+                <option value="autres">Autres</option>
+                </select>
+                <br>
+                <label for="votrequestion">Votre questions* :</label> <textarea name="votrequestion" cols="20" rows="1" id="votrequestion"></textarea><br>
+                
+                </datalist>
+            </fieldset>
+        </form>
+            <input type="checkbox"><p>*j'accepte le traitement informatique de ce formulaire</p>
+            <br>
+             <input type="submit" value="envoyer">
+             <input type="reset"  value="annuler">
+
+   
+   
+    <hr>
+    
+    </main>
+    <aside>[COLONNE DROITE]</aside>
+</div>
+<footer>
+    <ul>
+    <li><a href="" title="Mention_légales">Mention légales</a></li>
+    <li><a href="" title="Horaires"> Horaires</a></li>
+    <li><a href="" title="Plan_du_site">Plan du site</a></li>
+    </ul>
+</footer>
+   <script src="exercice.js"></script>
+</body>
+
+
+</html>

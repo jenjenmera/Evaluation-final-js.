@@ -1,0 +1,94 @@
+header img{
+    width: 15%;
+}
+header p{ 
+
+    margin-left: 25rem; font-size: 2rem;
+}
+
+header {
+    display: flex;
+}
+
+nav img{
+    width: 100%;   
+    height: auto;
+}
+
+
+ul{
+     display: flex; gap: 2rem; background-color: black; padding: 2rem;
+}
+li a{
+    color: aliceblue;
+}
+aside{
+    background-color: gray;
+    width: 25%; 
+}
+div{
+    display: flex; 
+}
+
+.BBQ{
+ width: 15rem;
+}
+
+@media screen and (max-width: 768px)  { 
+
+   section{
+    font-size: .7rem;
+     }
+     .jardlogo{
+        width: 19em;
+        height:4em;
+     }
+
+
+     aside{
+         display: none;
+
+     }
+     header p{
+       font-size: 1rem;
+    }
+    .BBQ{
+        width: 7.5rem;
+    }
+    ul{
+      font-size: 0.8em;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+        padding: 0.8rem;
+    }
+     main h1{
+
+        font-size: 1.5em;
+     } 
+     main p {
+        font-size: 0.9em;
+     }
+
+
+    
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
