@@ -32,22 +32,22 @@
     <h1>Contact</h1> 
     
     <hr>
-    <form>
+    <form id="formulaire">
         <p>*Ces zones sont obligatoires</p>
         <fieldset>
             <legend>Vos coordonnées</legend>
-            <label for="nom">Votre Nom*:</label><input type="text" name="nom" id="?"><br>
-            <label for="prenom">Votre Prenom*:</label><input type="text" name="prenom" id="?"><br>
-            <label for="Sexe">Sexe*:</label><input type="radio" name="Sexe" value="feminin">feminin
-            <input type="radio" name="Sexe" value="masculin">Masculin <br>
-             <label for="Codepostal">Code postal</label><input type="text" name="Codepostal" id="?"><br>
-             <label for="ville">Ville:</label><input type="text" name="ville" id="?"><br>
+            <label for="nom">Votre Nom*:</label><input type="text" name="nom" id="nom"> <span id="erreur1" style="color:brown;"> </span><br>
+            <label for="prenom">Votre Prenom*:</label><input type="text" name="prenom" id="prenom"><span id="erreur2" style="color:brown;" ></span><br>
+            <label for="Sexe">Sexe*:</label><input type="radio" name="Sexe" value="feminin" id="feminin">feminin 
+            <input type="radio" name="Sexe" value="masculin" id="masculin">Masculin <span id="erreur3" style="color: brown;"></span><br>
+             <label for="Codepostal">Code postal</label><input type="text" name="Codepostal" id="Codepostal"><span id="erreur4" style="color:brown;" ></span><br>
+             <label for="ville">Ville:</label><input type="text" name="ville" id="ville"><br>
             <label for="date">Date de naissance:</label><input type="date" name="ddn" id="date"><br>
-            <label for="?">Email*:</label><input type="email"><br>
+            <label for="Email">Email*:</label><input type="email" id="email"><span id="erreur5" style="color:brown;"></span><br>
             </fieldset>
             <fieldset>
                     <legend>Votre demande</legend>
-                <label for="sujet">Sujet*</label>
+                <label for="sujet">Sujet*</label><span id="erreur6" style="color:brown;"></span>
                 <select id="sujet" size="1"required title="veuillez selectionner un sujet.">
                 
                 <option value="veuillez Séléctionner un sujet">veuillez Séléctionner un sujet</option>
@@ -57,16 +57,18 @@
                 <option value="autres">Autres</option>
                 </select>
                 <br>
-                <label for="votrequestion">Votre questions* :</label> <textarea name="votrequestion" cols="20" rows="1" id="votrequestion"></textarea><br>
+                <label for="votrequestion">Votre questions* :</label> <span id="erreur7" style="color:brown;"></span><textarea name="votrequestion" cols="20" rows="1" id="votrequestion"></textarea><br>
                 
+                <input type="checkbox" id="check"><span id="erreur8" style="color:brown;" ></span><p>*j'accepte le traitement informatique de ce formulaire</p>
+                <br>
+                 <input type="submit" value="envoyer" id="submit"> 
+                 <input type="reset"  value="annuler">
+    
                 </datalist>
             </fieldset>
+            
         </form>
-            <input type="checkbox"><p>*j'accepte le traitement informatique de ce formulaire</p>
-            <br>
-             <input type="submit" value="envoyer">
-             <input type="reset"  value="annuler">
-
+           
    
    
     <hr>
@@ -81,7 +83,7 @@
     <li><a href="" title="Plan_du_site">Plan du site</a></li>
     </ul>
 </footer>
-   <script src="exercice.js"></script>
+   <script src="contact.js"></script>
 </body>
 
 
